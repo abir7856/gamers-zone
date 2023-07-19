@@ -38,6 +38,9 @@ header li a {
   font-size: 2.5em;
   font-weight: 700;
 }
+.gamer-title span {
+  color: #ff42a5;
+}
 nav li {
   list-style: none;
 }
@@ -123,11 +126,61 @@ nav li a {
   background: #4ec5f7;
 }
 
+/* We are gamer Section */
+.we-are-gamer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 94px 240px;
+  gap: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.we-are-gamer-title {
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.we-are-gamer-descriptions {
+  color: #534c64;
+  text-align: right;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.know-more {
+  margin-left: 320px;
+}
+.our-purpose {
+  color: #534c64;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 24px 0;
+}
+.unleash-everyone {
+  color: #534c64;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+}
+
 /* Media Query Styles */
 @media screen and (max-width: 576px) {
   header,
   .hd-nav-1 > ul,
-  .header-nav {
+  .header-nav,
+  .we-are-gamer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -143,15 +196,23 @@ nav li a {
     background-position: bottom left;
     background-size: 100% 60%;
   }
-  .banner-img {
+  .banner-img,
+  .we-are-gamer-img {
     width: 80vw;
     height: auto;
   }
   .btn {
     /* display: flex; */
   }
-  .banner-left {
+  .banner-left,
+  .we-are-gamer-details {
     width: 80vw;
     margin-top: 5em;
+  }
+  .know-more {
+    margin-left: 150px;
+  }
+  .we-are-gamer {
+    padding: 0;
   }
 }
