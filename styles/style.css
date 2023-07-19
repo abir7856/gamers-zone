@@ -1,4 +1,7 @@
 * {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-family: "Work Sans", sans-serif;
   margin: 0;
   padding: 0;
@@ -67,6 +70,57 @@ nav li a {
   justify-content: center;
   align-items: center;
   width: 210px;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../images/Group\ 14.png);
+  background-repeat: no-repeat;
+}
+.banner-title {
+  color: #0b0223;
+  font-size: 3em;
+  font-weight: 600;
+}
+.banner li {
+  list-style: none;
+  margin-bottom: 1rem;
+  color: #534c64;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.fa-solid,
+.fa-regular {
+  margin-right: 1em;
+}
+.btn .btn-primary {
+  margin-right: 1.5rem;
+  margin-top: 2rem;
+}
+.banner-heading {
+  font-size: 5.93em;
+  font-weight: 800;
+  font-family: Work Sans;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+.btn-primary {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 600;
+  padding: 21px 40px;
+  border-radius: 48px;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  border: 0;
+}
+.rogue-btn {
+  background: #4ec5f7;
 }
 
 /* Media Query Styles */
