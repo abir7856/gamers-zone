@@ -175,12 +175,109 @@ nav li a {
   line-height: 45px;
 }
 
+/* Online Game Styles */
+
+.online-game-title {
+  text-align: center;
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 120px;
+}
+.online-game-title > span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 700;
+}
+.online-game-description {
+  color: #534c64;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+.game-cart {
+  display: flex;
+  gap: 24px;
+}
+.cart > p {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 24px;
+  line-height: 30px;
+}
+.cart-img {
+  position: relative;
+}
+/* .hover-img, */
+.cart-hover {
+  width: 180px;
+  height: 100px;
+  position: relative;
+  top: -250px;
+  left: 90px;
+  display: none;
+}
+.cart-hover > p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Play Instantly */
+.play-instantly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+}
+.play-instantly-details {
+  width: 353px;
+}
+.play-instantly-title {
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
+  color: #0b0223;
+}
+.play-instantly-title > span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.play-instantly-description {
+  color: #534c64;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 24px;
+}
+.play-instantly-side-img {
+  position: relative;
+  top: 100px;
+  left: 150px;
+}
 /* Media Query Styles */
 @media screen and (max-width: 576px) {
   header,
   .hd-nav-1 > ul,
   .header-nav,
-  .we-are-gamer {
+  .we-are-gamer,
+  .game-cart {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -210,9 +307,15 @@ nav li a {
     margin-top: 5em;
   }
   .know-more {
-    margin-left: 150px;
+    margin-left: 0px;
   }
-  .we-are-gamer {
+  .we-are-gamer,
+  .online-game,
+  .we-are-gamer-title,
+  .we-are-gamer-descriptions,
+  .our-purpose,
+  .unleash-everyone {
     padding: 0;
+    text-align: center;
   }
 }
